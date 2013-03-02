@@ -1051,7 +1051,7 @@ IF ~Global("I#MazzyRadiantHeart","GLOBAL",2) RealGlobalTimerExpired("I#MazzyRadi
   ++ @391 DO ~IncrementGlobal("I#MazzyRadiantHeart","GLOBAL",1)~ + mo.1
   ++ @392 DO ~IncrementGlobal("I#MazzyRadiantHeart","GLOBAL",1)~ + mo.2
   ++ @393 DO ~IncrementGlobal("I#MazzyRadiantHeart","GLOBAL",1)~ + mo.3
-  IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ EXTERN KELDORJ I#MazOrder
+  IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ DO ~IncrementGlobal("I#MazzyRadiantHeart","GLOBAL",1)~ EXTERN KELDORJ I#MazOrder
 END
 
 IF ~~ mo.1
